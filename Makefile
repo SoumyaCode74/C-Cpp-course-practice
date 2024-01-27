@@ -7,7 +7,7 @@ clean:
 #outputfile.out:outputfile1.c outputfile2.c outputfile1.h outputfile2.h
 single_list:
 	@echo "Building single_list.c"
-	@gcc single_list.c -o single_list.exe
+	@gcc src/single_list.c -I"inc/" -o single_list.exe
 sorted_linked_list:
 	@echo "Building sorted_linked_list.c"
-	@gcc sorted_linked_list.c -o sorted_linked_list.exe
+	@gcc src/sorted_linked_list.c -I"inc/" -o sorted_linked_list.exe
