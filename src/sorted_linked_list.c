@@ -79,6 +79,7 @@ void bubble_sort_list(List * head){
 }
 /* Define a function to print each element's data of the list, starting from the address passed */
 void print_list(List * head){
+    int carriage_return_counter = 1;
     while(head != NULL){
         if ((head -> data) < 0){
             printf("(%d)-->", head->data);
@@ -86,7 +87,9 @@ void print_list(List * head){
         else{
             printf("%d-->", head->data);
         }
+        if (!(carriage_return_counter++ % 5))
+            printf("\n");
         head = head->next;
     }
-    printf("END\n");
+    printf("\n");
 }

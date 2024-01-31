@@ -11,3 +11,7 @@ single_list:
 sorted_linked_list:
 	@echo "Building sorted_linked_list.c"
 	@gcc src/sorted_linked_list.c -I"inc/" -o sorted_linked_list.exe
+struct_rationals:
+	@echo "Building struct_rationals.c"
+	@gcc src/Struct_Rationales.c -I"inc/" -o Struct_Rationales.exe
+
