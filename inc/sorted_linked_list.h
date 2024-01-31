@@ -9,7 +9,7 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-#define NUMBER_OF_ELEMENTS      (5)
+#define NUMBER_OF_ELEMENTS      (6)
 
 typedef struct list{int32_t data; struct list * next;}List;
 List * create_element_of_list(int32_t data);
