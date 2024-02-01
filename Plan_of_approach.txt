@@ -1,0 +1,13 @@
+2. Declare and define the structure of rationals
+3. Declare and define the functions addition, subtraction, multiplication, and division
+Add an exit condition in division routine for divide by 0.
+1. Open the file for reading.
+Read the file to read the first byte
+3. Save it in a variable LENGTH. Use it to define an array of rationals structure
+4. Read the next bytes until EOF and save the input numbers in pairs into each element of the array
+5.
+6.
+7. Pass the array to the addition routine, and save the result in the variable Sum, of datatype double.
+8. Define a new variable Average and save the value of Sum / LENGTH.
+9. Print the value of Sum and Average
+10. Close the file.
