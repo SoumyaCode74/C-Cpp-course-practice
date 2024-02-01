@@ -18,7 +18,7 @@ int main()
      * because there are two integers for 1 struct element 
     */
     int integers[(length * 2)];
-	while (fscanf(ptr, "%d ", &read_elements[index]) == 1){
+	while( (fscanf(ptr, "%d ", &read_elements[index]) == 1) && (index < (length * 2)) ){
         integers[index] = read_elements[index];
         index++;
     }
