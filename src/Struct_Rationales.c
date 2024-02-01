@@ -1,9 +1,10 @@
 #include "Struct_Rationales.h"
 
+FILE* ptr;
 int main()
 {
-	FILE* ptr = fopen("src/integers.txt", "r");
-	if (ptr == NULL) {
+    ptr = fopen("src/integers.txt", "r");
+    if (ptr == NULL) {
 		printf("no such file.");
 		exit(1);
 	}
@@ -43,6 +44,7 @@ int main()
     double average = sum/length;
     printf("Sum of the rational numbers: %.4lf\n", sum);
     printf("Average of the rational numbers: %.4lf\n", average);
+    fclose(ptr);
 	return 0;
 }
 /* Define function that returns the addition of two rational numbers */
@@ -51,6 +53,7 @@ double add(Rationale a, Rationale b){
         return ((a.num/a.den) + (b.num/b.den));
     else{
         printf("Division by 0 found\n");
+        fclose(ptr);        
         exit(1);
     }
 }
@@ -60,6 +63,7 @@ double subtract(Rationale a, Rationale b){
         return ((a.num/a.den) - (b.num/b.den));
     else{
         printf("Division by 0 found\n");
+        fclose(ptr);        
         exit(1);
     }
 }
@@ -69,6 +73,7 @@ double multiply(Rationale a, Rationale b){
         return ((a.num/a.den) * (b.num/b.den));
     else{
         printf("Division by 0 found\n");
+        fclose(ptr);        
         exit(1);
     }
 }
@@ -78,6 +83,7 @@ double divide(Rationale a, Rationale b){
         return ((a.num/a.den) / (b.num/b.den));
     else{
         printf("Division by 0 found\n");
+        fclose(ptr);        
         exit(1);
     }
 }
