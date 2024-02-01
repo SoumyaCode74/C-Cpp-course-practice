@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdint.h>
+#include <stdlib.h>
 
 typedef struct rationals{
-    int32_t num;
-    int32_t den;
+    double num;
+    double den;
 }Rationale;
 
 double add(Rationale, Rationale);
