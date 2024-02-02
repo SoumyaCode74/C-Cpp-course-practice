@@ -14,4 +14,7 @@ sorted_linked_list:
 struct_rationals:
 	@echo "Building struct_rationals.c"
 	@gcc src/Struct_Rationales.c -I"inc/" -o Struct_Rationales.exe
+set_unset:
+	@echo "Building count_set_unset.c"
+	@gcc src/count_set_unset.c -I"inc/" -o Count_Set_Unset_Bits.exe
 
