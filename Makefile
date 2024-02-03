@@ -17,4 +17,7 @@ struct_rationals:
 set_unset:
 	@echo "Building count_set_unset.c"
 	@gcc src/count_set_unset.c -I"inc/" -o Count_Set_Unset_Bits.exe
+bytes_and_nibbles:
+	@echo "Building extract_bytes_and_nibbles.c"
+	@gcc src/extract_bytes_and_nibbles.c -o Extract_bytes_and_nibbles.exe
 
