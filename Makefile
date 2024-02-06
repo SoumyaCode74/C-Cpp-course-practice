@@ -20,4 +20,10 @@ set_unset:
 bytes_and_nibbles:
 	@echo "Building extract_bytes_and_nibbles.c"
 	@gcc src/extract_bytes_and_nibbles.c -o Extract_bytes_and_nibbles.exe
+first_order_filter:
+	@echo "Building first_order_filter.c"
+	@gcc src/first_order_filter.c -o First-Order-Low-Pass-Filter.exe
+count_set_unset_recursive:
+	@echo "Building count_set_unset_recursive.c"
+	@gcc src/count_set_unset_recursive.c
 
