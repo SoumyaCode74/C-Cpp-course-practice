@@ -54,3 +54,4 @@ dkms.conf
 */latex/
 */Debug/
 *project
+*.settings
