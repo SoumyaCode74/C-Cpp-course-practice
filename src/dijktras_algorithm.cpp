@@ -78,7 +78,7 @@ int shortest_distance(Graph g, int path_length[], bool connected[]){
 	return index;
 }
 
-// function to calculate average path
+// function to calculate average distance
 double average_distance(Graph g, int path_length[]){
 	int sum = 0;
 	for (int d = 0; d < g.get_number_of_vertices(); d++){
@@ -93,13 +93,12 @@ int dijkstra(Graph g, int ref_vertex){
 	int path_length[g.get_number_of_vertices()];
 	bool connected[g.get_number_of_vertices()];
 
-	// initialize the array with infinity and all on open set
 	for (int i = 0; i < g.get_number_of_vertices(); i++){
 		path_length[i] = INT_MAX;
 		connected[i] = false;
 	}
 
-	// the distance from the src always zero
+	// the distance from the reference vertex always zero
 	path_length[ref_vertex] = 0;
 
 	// loop through other nodes
